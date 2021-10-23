@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="cursor"></div>
+    <h1>Design your own jacket</h1>
+    <section>
+      <div class="preview">
+        <img
+          src="badges/alien_badge.png"
+          alt=""
+          data-badge="alien"
+          class="hide"
+        />
+        <img src="badges/egg_badge.png" alt="" data-badge="egg" class="hide" />
+        <img
+          src="badges/rose_badge.png"
+          alt=""
+          data-badge="rose"
+          class="hide"
+        />
+        <img
+          src="badges/starwars_badge.png"
+          alt=""
+          data-badge="starwars"
+          class="hide"
+        />
+        <img
+          src="badges/yoda_badge.png"
+          alt=""
+          data-badge="yoda"
+          class="hide"
+        />
+        <div class="image"></div>
+      </div>
+
+      <div class="settings">
+        <h2>Choose a color</h2>
+        <div class="top">
+          <div class="color" style="background-color: #a06b63"></div>
+          <div class="color" style="background-color: #6c8ba9"></div>
+          <div class="color" style="background-color: #40465e"></div>
+          <div class="color" style="background-color: #6e5b59"></div>
+          <div class="color" style="background-color: #637463"></div>
+          <div class="color" style="background-color: #9581a4"></div>
+          <div class="color" style="background-color: #3b3c43"></div>
+          <div class="color" style="background-color: #414d80"></div>
+        </div>
+        <div class="buttom">
+          <h2>Add a badge</h2>
+          <img
+            src="badges/small_alien.png"
+            alt=""
+            class="badge alien-badge"
+            data-badge="alien"
+          />
+          <img
+            src="badges/small_egg.png"
+            alt=""
+            class="badge egg-badge"
+            data-badge="egg"
+          />
+          <img
+            src="badges/small_rose.png"
+            alt=""
+            class="badge rose-badge"
+            data-badge="rose"
+          />
+          <img
+            src="badges/small_starwars.png"
+            alt=""
+            class="badge starwars-badge"
+            data-badge="starwars"
+          />
+          <img
+            src="badges/small_yoda.png"
+            alt=""
+            class="badge yoda-badge"
+            data-badge="yoda"
+          />
+        </div>
+
+        <h2>Chosen badges</h2>
+        <div id="selected"></div>
+
+        <button class="save">Save</button>
+        <button class="reset">Reset</button>
+        <button class="share">Share</button>
+      </div>
+    </section>
+    <div id="save_confirmation" class="modal hidden">
+      <div class="dialog">
+        <div class="x">X</div>
+        <div class="dialog_content">
+          <p>Your jacket has been saved</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="share_confirmation" class="modal hidden">
+      <div class="dialog">
+        <div class="x">X</div>
+        <div class="dialog_content">
+          <p>Click to copy the link</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

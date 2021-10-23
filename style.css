@@ -1,0 +1,195 @@
+body {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#selected {
+  height: 70px;
+}
+
+.cursor {
+  position: fixed;
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  pointer-events: none;
+  left: -100px;
+  top: 50%;
+  mix-blend-mode: difference;
+  z-index: 2;
+  height: 30px;
+  width: 30px;
+  transition: all 300ms ease-out;
+}
+g,
+.buttom img {
+  cursor: pointer;
+}
+h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 5rem;
+}
+h2 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+}
+button {
+  width: 8rem;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  background-color: transparent;
+  border: 2px solid black;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+button:hover {
+  transform: translateY(-2px);
+}
+.color {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+.top {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+#shadow,
+.preview img {
+  pointer-events: none;
+}
+.cls-1,
+.cls-3,
+.cls-4,
+.cls-5,
+.cls-6,
+.cls-7,
+.cls-8 {
+  isolation: isolate;
+}
+
+.cls-1 {
+  opacity: 0.7;
+}
+
+.cls-2 {
+  fill-rule: evenodd;
+}
+
+.cls-3 {
+  opacity: 0.7;
+}
+
+.cls-4 {
+  opacity: 0.7;
+}
+
+.cls-5 {
+  opacity: 0.7;
+}
+
+.cls-6 {
+  opacity: 0.7;
+}
+
+.cls-7 {
+  opacity: 0.7;
+}
+
+.cls-8 {
+  opacity: 0.7;
+}
+.stroke {
+  stroke: grey;
+  stroke-width: 5px;
+}
+.hide {
+  display: none;
+}
+.preview img {
+  position: absolute;
+}
+
+.preview {
+  position: relative;
+}
+/**** Dialog boxes ****/
+.hidden {
+  visibility: hidden;
+}
+.fade {
+  animation: fadeIn 1s forwards;
+  opacity: 0;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.leave {
+  animation: leaveScreen 0.5s forwards;
+}
+@keyframes leaveScreen {
+  to {
+    transform: translateX(200vw);
+  }
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.dialog {
+  border: 2px solid black;
+  /*   padding: 4rem; */
+  background-color: white;
+  position: relative;
+  width: 400px;
+  text-align: center;
+}
+.dialog_content {
+  align-self: center;
+  padding: 5rem;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.5rem;
+}
+.x {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+#share_confirmation .dialog_content p {
+  cursor: pointer;
+}
+@media (min-width: 600px) {
+  section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+  }
+  svg,
+  .preview img {
+    width: 100%;
+  }
+  .buttom img,
+  #selected img {
+    width: 3rem;
+    margin: 0.5rem;
+    margin-top: 0rem;
+  }
+}
